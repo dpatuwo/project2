@@ -6,28 +6,28 @@ DROP TABLE IF EXISTS comments;
 CREATE TABLE topics (
   id SERIAL PRIMARY KEY,
   name VARCHAR,
-  relation VARCHAR,
+  relation INTEGER,
   description VARCHAR
 );
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   name VARCHAR,
-  access VARCHAR,
+  access INTEGER, # 0 - Regular user  1 - Moderator  2 - Admin
 );
 
 CREATE TABLE posts (
   id SERIAL PRIMARY KEY,
   name VARCHAR,
   body VARCHAR,
-  topic_id VARCHAR,
-  user_id VARCHAR
+  topic_id INTEGER,
+  user_id INTEGER
 );
 
 CREATE TABLE comments (
   id SERIAL PRIMARY KEY,
-  name VARCHAR,
-  age INTEGER,
-  gender VARCHAR,
-  apartment_id INTEGER
+  body VARCHAR,
+  user_id INTEGER,
+  post_id INTEGER,
+  relation INTEGER
 );
