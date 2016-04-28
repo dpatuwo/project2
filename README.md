@@ -1,2 +1,2 @@
 # project2
-A forum for 
+A forum template
