@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Hello!
 ====
 
@@ -26,4 +25,3 @@ What's next?
 =======
 # project2
 A forum template
->>>>>>> a701ba31263373778d3f25b3c4f0c6e342bd5056
