@@ -1,6 +1,9 @@
-require 'rubygems'
-require 'sinatra'
+module Sinatra
+  class Server < Sinatra::Base
 
-get '/' do
-  erb :topic
+    get '/' do
+      erb :topic
+    end
+
+  end
 end
