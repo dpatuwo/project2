@@ -1,7 +1,7 @@
-TRUNCATE TABLE topics CASCADE
-TRUNCATE TABLE users CASCADE
-TRUNCATE TABLE posts CASCADE
-TRUNCATE TABLE comments CASCADE
+DROP TABLE IF EXISTS topics
+DROP TABLE IF EXISTS users
+DROP TABLE IF EXISTS posts
+DROP TABLE IF EXISTS comments
 
 INSERT INTO topics (id, name, relation, description) VALUES (1, 'Random', 0, 'Put anything you want in here!')
 INSERT INTO users (id, name, access) VALUES (1, 'David', 2)
